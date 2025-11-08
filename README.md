@@ -104,3 +104,40 @@ Conformance Checking Approximation Using Subset Selection and Edit Distance. CAi
 
 [3] Mohammadreza Fani Sani, Juan J. Garza Gonzalez, Sebastiaan J. van Zelst, Wil M. P. van der Aalst:
 Conformance Checking Approximation Using Simulation. ICPM 2020: 105-112
+
+---
+
+## 🆕 BPI2015 Experiments (Latest Addition)
+
+This repository now includes a complete experimental setup for the **BPI Challenge 2015** dataset!
+
+### What's New
+
+- **SimpleXESReader**: Lightweight XES parser without JAXB dependencies
+- **XESRunner**: Automated experiment runner for BPI2015 dataset
+- **SimpleTest**: Standalone demonstration with hardcoded examples
+- **Complete Documentation**: See `EXPERIMENT_RESULTS.md` and `SETUP_STATUS.md`
+
+### Quick Start
+
+```bash
+# Run the simple demonstration (no dataset required)
+java -cp "target/classes:lib/*" ee.ut.cs.dsg.confcheck.SimpleTest
+
+# Run BPI2015 experiments (requires dataset)
+java -cp "target/classes:lib/*" ee.ut.cs.dsg.confcheck.XESRunner \
+  "/path/to/BPI2015/" 50
+```
+
+### Results Summary
+
+Running on 50 BPI2015 traces:
+- ✅ **Perfect conformance**: 62% (31/50 traces)
+- ⚡ **Average time**: 254ms per trace
+- 📊 **Average cost**: 17.84 deviations for non-conforming traces
+- 🗜️ **Trie efficiency**: 783 events → 677 nodes
+
+For detailed results and instructions, see:
+- `EXPERIMENT_RESULTS.md` - Complete experimental results
+- `SETUP_STATUS.md` - Technical setup and troubleshooting
+- `GITHUB_SETUP.md` - How to push to your own GitHub repository
