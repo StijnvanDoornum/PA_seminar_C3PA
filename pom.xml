@@ -11,6 +11,95 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <!-- Add key lib JARs as system dependencies -->
+        <dependency>
+            <groupId>org.deckfour.xes</groupId>
+            <artifactId>OpenXES</artifactId>
+            <version>20181205</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/OpenXES-20181205.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.processmining</groupId>
+            <artifactId>ProM-Framework</artifactId>
+            <version>6.10.110</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/ProM-Framework-6.10.110.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.processmining</groupId>
+            <artifactId>ProM-Models</artifactId>
+            <version>latest</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/ProM-Models-latest.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.processmining</groupId>
+            <artifactId>ProM-Plugins</artifactId>
+            <version>latest</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/ProM-Plugins-latest.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.processmining</groupId>
+            <artifactId>PetriNets</artifactId>
+            <version>latest</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/PetriNets-latest.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>16.0.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/guava-16.0.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.processmining</groupId>
+            <artifactId>Alignment</artifactId>
+            <version>latest</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/Alignment-latest.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>colt</groupId>
+            <artifactId>colt</artifactId>
+            <version>1.2.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/colt-1.2.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.processmining</groupId>
+            <artifactId>BasicUtils</artifactId>
+            <version>latest</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/BasicUtils-latest.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>lpsolve</groupId>
+            <artifactId>LpSolve</artifactId>
+            <version>latest</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/LpSolve-latest.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

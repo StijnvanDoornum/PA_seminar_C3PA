@@ -62,13 +62,14 @@ public class Runner {
 
 //        testBed3();
 //        System.exit(0);
-        String randomProxyLog = "C:\\Work\\DSG\\Data\\Logs\\BPI2015\\randomLog.xml";
-        String clusteredLog = "C:\\Work\\DSG\\Data\\Logs\\BPI2015\\sampledClusteredLog.xml";
-        String simulatedLog = "C:\\Work\\DSG\\Data\\Logs\\BPI2015\\simulatedLog.xml";
-        String reducedActivityLog = "C:\\Work\\DSG\\Data\\Logs\\BPI2015\\reducedLogActivity.xml";
-        String frequencyActivityLog = "C:\\Work\\DSG\\Data\\Logs\\BPI2015\\frequencyLog.xml";
-        String sampleLog = "C:\\Work\\DSG\\Data\\Logs\\BPI2015\\sampledLog.xml";
-        String singular = "C:\\Work\\DSG\\Data\\Logs\\BPI2015\\Singular.xes";
+        String dataDir = "/Users/stijnvandoornum/Dropbox/Mijn Mac (MacBook Pro van Stijn)/Downloads/BPI2015/";
+        String randomProxyLog = dataDir + "randomLog.xml";
+        String clusteredLog = dataDir + "sampledClusteredLog.xml";
+        String simulatedLog = dataDir + "simulatedLog.xml";
+        String reducedActivityLog = dataDir + "reducedLogActivity.xml";
+        String frequencyActivityLog = dataDir + "frequencyLog.xml";
+        String sampleLog = dataDir + "sampledLog.xml";
+        String singular = dataDir + "Singular.xes";
 
         String randomSepsisProxyLog = "C:\\Work\\DSG\\Data\\Logs\\Sepsis\\randomLog.xml";
         String clusteredSepsisLog = "C:\\Work\\DSG\\Data\\Logs\\Sepsis\\sampledClusteredLog.xml";
